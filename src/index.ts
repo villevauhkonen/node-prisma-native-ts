@@ -1,5 +1,5 @@
 import { PrismaClient } from "./prisma/client/index.js";
-import { getTimestamp, getRandomId } from "./utils.js";
+import { getTimestamp, getRandomId } from "./utils.ts";
 
 const prisma = new PrismaClient();
 
