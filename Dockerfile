@@ -13,6 +13,4 @@ RUN pnpm run build
 FROM base AS application
 COPY --from=build /app/package.json /app/package.json
 COPY --from=build /app/dist /app/dist
-EXPOSE 4100
-WORKDIR /app
 CMD [ "pnpm", "start" ]
