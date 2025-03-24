@@ -19,19 +19,20 @@ pnpm prisma:generate
 
 ```bash
 docker compose up -d postgres
-pnpm run dev
+pnpm prisma:migrate
+pnpm dev
 ```
 
 ## Build
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
 ## Run
 
 ```bash
-pnpm run start
+pnpm start
 ```
 
 ## Docker

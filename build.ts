@@ -17,7 +17,7 @@ await build({
   bundle: true,
   treeShaking: true,
   packages: "bundle",
-  external: ["./src/prisma/client/index.js"],
+  external: ['@prisma/client', './prisma/*'],
   outfile: "dist/index.js",
   plugins: [
     copy({
