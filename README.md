@@ -7,19 +7,18 @@ Sample project to test Prisma with Node.js native Typescript support.
 - Node.js 23.x or higher
 - pnpm 10.x or higher
 - Docker
+- permission to run `./start-infra.sh`
 
 ## Setup
 
 ```bash
 pnpm install
-pnpm prisma:generate
+pnpm start:infra
 ```
 
 ## Development
 
 ```bash
-docker compose up -d postgres
-pnpm prisma:migrate
 pnpm dev
 ```
 

@@ -1,4 +1,4 @@
 node_modules
 dist
 src/prisma
-
+postgres_data
